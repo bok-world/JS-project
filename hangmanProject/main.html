@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hangman game</title>
+
+    <link rel="stylesheet" href="/hangmanProject/main.css">
+    <script src="/hangmanProject/main.js"></script>
 </head>
 <body>
-    행맨 게임
+    <section>
+        <p class="title">Hangman Game Project</p>
+        <p class="subTitle">Vanilla javascript hangman game</p>
+        <p class="description">Use the alphabe below to guess the word, or click hint to ge a clue.</p>
+        <div id="alphabets">
+            
+        </div>
+        <div>The Chosen Category is <span class="subjects">fruits</span></div>
+        <div>
+            <input type="text">
+        </div>
+
+
+    </section>
+    <!-- 행맨게임 규칙-->
+    <!-- 
+        1. 주제 선택 (주제를 선택해서 배열에다가 저장해 놓는다.)
+        2. 단어의 개수만큼 빈칸을 만들어 놓는다.
+        3. 단어의 개수만큼 선택 가능하다. 
+            > 선택 시 알파벳이 있으면 알파벳을 빈칸에 보여주고, 
+            없으면 숫자를 감소시킨다. 
+        4. 입력했을때 단어의 배열과 같으면 승리
+        5. 선택 기회를 소진하면 진다. 
+        6. 힌트는 한번 쓸 수 있다. 
+     -->
 </body>
 </html>

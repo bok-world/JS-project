@@ -7,11 +7,11 @@
     <title>TODO</title>
 
     <link rel="stylesheet" href="/todoProject/main.css">
-    <script src="/todoProject/main.js"></script>
+
 
 </head>
 <body>
-    <div id="tasker" class="tasker">
+    <!-- <div id="tasker" class="tasker">
         <div id="error" class="error">Please enter a  task</div>
         <div id="tasker-header" class="tasker-header">
             <input type="text" id="input-tasker" placeholder="Enter a tasker">
@@ -22,6 +22,18 @@
 
             </ul>
         </div>
+    </div> -->
+    <div id="tasker" class="tasker">
+        <div id="error" class="error">Please enter a task</div>
+        <div id="tasker-header" class="tasker-header">
+            <input type="text" id="input-task" placeholder="Enter a task">
+            <button id="add-task-btn"><i class="fa fa-fw fa-plus">+</i>
+            </button>
+        </div>
+        <div class="tasker-body">
+            <ul id="tasks"></ul>
+        </div>
     </div>
+    <script src="/todoProject/main.js"></script>
 </body>
 </html>

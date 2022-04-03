@@ -1,3 +1,4 @@
+// document.addEventListener("DOMContentLoaded",function(){
 (function(){
     'use strict';
     var tasker = {
@@ -20,10 +21,10 @@
       evalTasklist: function(){
         var i, chkBox, delBtn;
         for(i = 0; i<this.tasklistChildren.length; i+=1){
-          chkBox = this.tasklistChildren[i].getElementByTagName("input")[0];
+          chkBox = this.tasklistChildren[i].getElementsByTagName("input")[0];
           chkBox.onclick = this.completeTask.bind(this, this.tasklistChildren[i], chkBox);
   
-          delBtn = this.tasklistChildren[i].getElementByTagName("button")[0];
+          delBtn = this.tasklistChildren[i].getElementsByTagName("button")[0];
           delBtn.onclick = this.delTask.bind(this,i);
         }
       },
@@ -42,6 +43,8 @@
         // trash icon
         taskTrash = document.createElement("i");
         taskTrash.setAttribute("class","fa fa-trash");
+        taskTrash.textContent = '-' 
+        console.log(taskTrash.textContent)
         // insert trash can into button
         taskBtn.appendChild(taskTrash);
   
@@ -95,3 +98,5 @@
     tasker.init();
   
   }());
+// }());
+// })
